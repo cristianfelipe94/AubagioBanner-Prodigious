@@ -1,0 +1,290 @@
+@charset "UTF-8";
+.banner {
+  background-color: black;
+  overflow: hidden;
+  display: none;
+  border: 1px solid black;
+}
+
+#btnExit {
+  cursor: pointer;
+  opacity: 0
+}
+
+.bannerSize {
+  width: 300px;
+  height: 250px;
+  position: relative;
+}
+
+.bannerSize img {
+  border: none;
+}
+
+.hide {
+  opacity:0;
+}
+
+.retina{
+  background-size:cover !important;
+}
+
+.aC{
+  right:0;
+  left:0;
+  margin:0 auto;
+}
+
+* {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+
+/*Loading images into elements*/
+.background-lunchables-position {
+  background: url('background.png');
+  height: 250px;
+  width: 300px;
+}
+
+.first-catchphrase-opacity {
+  background: url('phrase2.png');
+  height: 25px;
+  width: 220px;
+  position: absolute;
+  left: 45px;
+  top: 63px;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.second-catchphrase-opacity {
+  background: url('phraseSixth.png');
+  height: 40px;
+  width: 190px;
+  position: absolute;
+  left: 64px;
+  top: 54px;
+}
+
+.small-letters-position {
+  background: url('phraseSeventh.png');
+  height: 15px;
+  width: 205px;
+  position: absolute;
+  left: 7px;
+  top: 120px;
+}
+
+.third-catchphrase-opacity {
+  background: url('phrase1.png');
+  height: 65px;
+  width: 250px;
+  position: absolute;
+  left: 39px;
+  top: 13px;
+  z-index: 2;
+}
+
+.logo-position {
+  background: url('logo.png');
+  height: 50px;
+  width: 95px;
+  position: absolute;
+  left: 18px;
+  top: 87px;
+}
+
+.cta-action {
+  background: url('cta.png');
+  height: 25px;
+  width: 115px;
+  position: absolute;
+  left: 169px;
+  top: 104px;
+}
+
+.blur-shadow {
+  background: url('blur.png');
+  height: 240px;
+  width: 300px;
+  position: absolute;
+  left: 0px;
+  top: -35px;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.first-shadowText-opacity {
+  background: url('textShadow1.png');
+  height: 240px;
+  width: 125px;
+  position: absolute;
+  left: 212px;
+  top: -32px;
+}
+
+.second-shadowText-opacity {
+  background: url('textShadow2.png');
+  height: 95px;
+  width: 240px;
+  position: absolute;
+  left: 0px;
+  top: -23px;
+}
+
+.third-shadowText-opacity {
+  background: url('textShadow3.png');
+  height: 125px;
+  width: 145px;
+  position: absolute;
+  left: 71.5px;
+  top: 89px;
+}
+
+.fourth-shadowText-opacity {
+  background: url('textShadow4.png');
+  height: 270px;
+  width: 85px;
+  position: absolute;
+  left: 0px;
+  top: 45px;
+}
+
+.warning-container {
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  font-size: 10px;
+  overflow-y: auto;
+  z-index: 101;
+  padding: 5px;
+  padding: 5px 10px 5px 5px;
+}
+
+.warning-container p, span {
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+.font-upper {
+  text-transform: uppercase;
+}
+
+.prewarning-container {
+  height: 35px;
+  width: 100%;
+  color: white;
+  background-color: #023395;
+  display: inline-block;
+  position: absolute;
+  bottom: 80px;
+  font-size: 9px;
+  padding: 4px;
+  z-index: 101;
+}
+
+.prewarning-container a {
+  color: white;
+  font-size: 9px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.prewarning-container span {
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+#isi-controls {
+  right: 4px;/*offset to right marging*/
+  height: 88%;
+  width: 7px;
+  z-index: 105;
+  bottom: 0px;
+}
+
+#arrowUp {
+  top: 2px;
+  left: 0px;
+  height: 3px;
+  width: 7px;
+  background: url('arrow.png');
+  cursor: pointer;
+}
+
+#arrowDown {
+  bottom: 2px;
+  left: 0px;
+  height: 3px;
+  width: 7px;
+  background: url('arrow.png');
+  -webkit-transform: scaleY(-1);
+  -moz-transform: scaleY(-1);
+  transform: scaleY(-1);
+  cursor: pointer;
+}
+
+.scroller {
+  cursor: pointer;
+  width: 5px;
+  height: 15px;
+  border-radius: 5px;
+  top: 0;
+  right: 0;
+  background-color: #cbcbca;
+  border: solid 1px #979797;
+  -webkit-transition: top .08s;
+  -moz-transition: top .08s;
+  -ms-transition: top .08s;
+  -o-transition: top .08s;
+  transition: background-color 1s;
+}
+
+.scroller:hover {
+  background-color: #f5800e;
+  transition: 1s ease;
+}
+
+.isiLineWithArrows {
+  background: #f6f6f6;
+  border-radius: 0;
+  top: 10%;
+  right: 1px;
+  height: 80%;
+  width: 5px;
+  cursor: pointer;
+}
+
+.isiLineNoArrows {
+  background: #f6f6f6;
+  border-radius: 0;
+  top: 0;
+  right: 1px;
+  height: 100%;
+  width: 5px;
+  cursor: pointer;
+}
+
+#js-container-moved {
+  left: 0;
+  bottom: 0px;
+  width: 300px;
+  height: 90px;
+  overflow: hidden;
+  background-color: #fff;
+}
